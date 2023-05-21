@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AEB062C2A1A326600889719 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0AEB062B2A1A326600889719 /* RxCocoa */; };
+		0AEB062E2A1A326600889719 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0AEB062D2A1A326600889719 /* RxRelay */; };
+		0AEB06302A1A326600889719 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0AEB062F2A1A326600889719 /* RxSwift */; };
+		0AEB06322A1A333100889719 /* Kingfisher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEB06312A1A333100889719 /* Kingfisher.xcframework */; };
 		0AF0F8192A1A24EB00B33DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0F8182A1A24EB00B33DDC /* AppDelegate.swift */; };
 		0AF0F81B2A1A24EB00B33DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0F81A2A1A24EB00B33DDC /* SceneDelegate.swift */; };
 		0AF0F81D2A1A24EB00B33DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0F81C2A1A24EB00B33DDC /* ViewController.swift */; };
 		0AF0F8202A1A24EB00B33DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF0F81E2A1A24EB00B33DDC /* Main.storyboard */; };
 		0AF0F8222A1A24EB00B33DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF0F8212A1A24EB00B33DDC /* Assets.xcassets */; };
 		0AF0F8252A1A24EB00B33DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF0F8232A1A24EB00B33DDC /* LaunchScreen.storyboard */; };
+		0AF0F8402A1A268D00B33DDC /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0F83F2A1A268D00B33DDC /* ActivityController.swift */; };
+		0AF0F8422A1A269700B33DDC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0F8412A1A269700B33DDC /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AEB06312A1A333100889719 /* Kingfisher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Kingfisher.xcframework; path = Carthage/Build/Kingfisher.xcframework; sourceTree = "<group>"; };
 		0AF0F8152A1A24EA00B33DDC /* GitFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF0F8182A1A24EB00B33DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AF0F81A2A1A24EB00B33DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		0AF0F8212A1A24EB00B33DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF0F8242A1A24EB00B33DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF0F8262A1A24EB00B33DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF0F83F2A1A268D00B33DDC /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		0AF0F8412A1A269700B33DDC /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEB06302A1A326600889719 /* RxSwift in Frameworks */,
+				0AEB062E2A1A326600889719 /* RxRelay in Frameworks */,
+				0AEB06322A1A333100889719 /* Kingfisher.xcframework in Frameworks */,
+				0AEB062C2A1A326600889719 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,7 @@
 			children = (
 				0AF0F8172A1A24EA00B33DDC /* GitFeed */,
 				0AF0F8162A1A24EA00B33DDC /* Products */,
+				0AF0F8342A1A264500B33DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +77,18 @@
 				0AF0F8212A1A24EB00B33DDC /* Assets.xcassets */,
 				0AF0F8232A1A24EB00B33DDC /* LaunchScreen.storyboard */,
 				0AF0F8262A1A24EB00B33DDC /* Info.plist */,
+				0AF0F83F2A1A268D00B33DDC /* ActivityController.swift */,
+				0AF0F8412A1A269700B33DDC /* Event.swift */,
 			);
 			path = GitFeed;
+			sourceTree = "<group>";
+		};
+		0AF0F8342A1A264500B33DDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AEB06312A1A333100889719 /* Kingfisher.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,11 @@
 			dependencies = (
 			);
 			name = GitFeed;
+			packageProductDependencies = (
+				0AEB062B2A1A326600889719 /* RxCocoa */,
+				0AEB062D2A1A326600889719 /* RxRelay */,
+				0AEB062F2A1A326600889719 /* RxSwift */,
+			);
 			productName = GitFeed;
 			productReference = 0AF0F8152A1A24EA00B33DDC /* GitFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +140,9 @@
 				Base,
 			);
 			mainGroup = 0AF0F80C2A1A24EA00B33DDC;
+			packageReferences = (
+				0AEB062A2A1A326600889719 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 0AF0F8162A1A24EA00B33DDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF0F8402A1A268D00B33DDC /* ActivityController.swift in Sources */,
 				0AF0F81D2A1A24EB00B33DDC /* ViewController.swift in Sources */,
 				0AF0F8192A1A24EB00B33DDC /* AppDelegate.swift in Sources */,
 				0AF0F81B2A1A24EB00B33DDC /* SceneDelegate.swift in Sources */,
+				0AF0F8422A1A269700B33DDC /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +327,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +336,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjke.GitFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,8 +358,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +367,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bjke.GitFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +398,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0AEB062A2A1A326600889719 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0AEB062B2A1A326600889719 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AEB062A2A1A326600889719 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0AEB062D2A1A326600889719 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AEB062A2A1A326600889719 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		0AEB062F2A1A326600889719 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0AEB062A2A1A326600889719 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0AF0F80D2A1A24EA00B33DDC /* Project object */;
 }
